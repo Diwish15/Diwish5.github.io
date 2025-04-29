@@ -10,86 +10,61 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: #111;
-            color: #fff;
+            background: #0d1117;
+            color: #c9d1d9;
         }
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
-            background: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            background: #161b22;
         }
         .logo {
             font-size: 24px;
             font-weight: bold;
             color: #fff;
         }
-        nav {
-            display: flex;
-            gap: 20px;
-        }
         nav a {
-            color: #fff;
+            color: #58a6ff;
             text-decoration: none;
-            font-size: 18px;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #ff9800;
+            margin: 0 15px;
         }
         .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            height: 80vh;
             text-align: center;
-            padding: 50px;
-            background: rgba(255, 255, 255, 0.1);
-        }
-        .hero-content {
-            max-width: 600px;
+            padding: 80px 20px;
         }
         .hero h1 {
             font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #fff;
-        }
-        .hero p {
-            font-size: 20px;
-            color: #bbb;
         }
         .btn {
-            display: inline-block;
             padding: 12px 25px;
-            margin-top: 20px;
             font-size: 18px;
-            color: #fff;
-            background: #ff9800;
-            border: none;
+            background: #ffa500;
             border-radius: 25px;
-            cursor: pointer;
-            transition: background 0.3s;
+            text-decoration: none;
+            color: #fff;
         }
-        .btn:hover {
-            background: #e68900;
+        .projects, .contact, .about {
+            padding: 50px 20px;
+            text-align: center;
         }
-        .hero-image {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            background: #222;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
+        .projects ul {
+            list-style: none;
+            padding: 0;
         }
-        .hero-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
+        .projects li {
+            margin: 15px 0;
+        }
+        .projects a {
+            color: #ffa500;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .contact {
+            background: #161b22;
+            padding: 60px 20px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -103,14 +78,38 @@
         </nav>
     </header>
     <section class="hero">
-        <div class="hero-content">
-            <h1>Hi There, I'm Diwish</h1>
-            <p>A Computer Science student at UPES 🚀</p>
-            <a class="btn" href="https://github.com/Diwish15" target="_blank">View My GitHub</a>
-        </div>
-        <div class="hero-image">
-            <img src="images/memoji_clean.png" alt="Diwish's Avatar">
-        </div>
+        <h1>Hi There, I'm Diwish</h1>
+        <p>A Computer Science student at UPES 🚀</p>
+        <a class="btn" href="https://github.com/Diwish15" target="_blank" rel="noopener noreferrer">View My GitHub</a>
+        
+    </section>
+    <section id="about" class="about">
+        <h2>About</h2>
+        <p>I am passionate about container orchestration and automation. Here are my projects exploring Docker, Kubernetes, and cloud deployments.</p>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects - Container Experiments</h2>
+        <ul>
+            <li><a href="https://diwish15.github.io/Container_Experiments/Experiment_1/">1. Docker Basics - Hello World</a></li>
+            <li><a href="https://diwish15.github.io/Container_Experiments/Experiment_2/">2. Dockerized Streamlit Development</a></li>
+            <li><a href="https://diwish15.github.io/Container_Experiments/Experiment_3/">3. Titanic Survival Predictor Containerized</a></li>
+            <li><a href="https://diwish15.github.io/Container_Experiments/Experiment_4/">4. Containerized MySQL Agile</a></li>
+            <li><a href="https://diwish15.github.io/Container_Experiments/Experiment_5/">5. Docker Volume Persistence</a></li>
+            <li><a href="https://diwish15.github.io/Container_Experiments/Experiment_6/">6. Docker Bridge Balancing Isolation</a></li>
+            <li><a href="https://diwish15.github.io/Container_Experiments/Experiment_7/">7. Streamlit & PostgreSQL Docked</a></li>
+            <li><a href="https://diwish15.github.io/Container_Experiments/Experiment_8/">8. Evidently AI Sets Sail in Docker</a></li>
+            <li><a href="https://diwish15.github.io/Container_Experiments/Experiment_9/">9. Minikube with Docker on Windows</a></li>
+            <li><a href="https://diwish15.github.io/Container_Experiments/Experiment_10/">10. Deploying a Streamlit App in Docker</a></li>
+            <li><a href="https://diwish15.github.io/Container_Experiments/Experiment_11/">11. Deploying a Streamlit App on AWS EC2</a></li>
+        </ul>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p><strong>Name:</strong> Diwish Vatsal Rastogi</p>
+        <p><strong>SAP ID:</strong> 500105205</p>
+        <p><strong>Roll Number:</strong> R-214222-0491</p>
+        <p><a class="btn" href="https://github.com/Diwish15" target="_blank" rel="noopener noreferrer">My GitHub Profile</a></p>
+
     </section>
 </body>
 </html>
